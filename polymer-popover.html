@@ -575,13 +575,14 @@
 
       findBody() {
         var parentNode = this.parentNode;
-        while (parentNode) {
-          if (parentNode.tagName === 'BODY') {
-            this._setBody(parentNode);
-            return;
-          }
-          parentNode = parentNode.parentNode;
-        }
+          this._setBody(parentNode);
+//         while (parentNode) {
+//           if (parentNode.tagName === 'body') {
+//             this._setBody(parentNode);
+//             return;
+//           }
+//           parentNode = parentNode.parentNode;
+//         }
         return;
       }
 
